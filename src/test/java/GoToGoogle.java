@@ -18,7 +18,8 @@ public class GoToGoogle {
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
     System.setProperty("webdriver.chrome.driver", "C:\\Webdrivers\\Chrome\\chromedriver.exe");
-    driver = new ChromeDriver();
+    //driver = new ChromeDriver();
+    driver = new FirefoxDriver();
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
